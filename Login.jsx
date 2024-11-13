@@ -32,12 +32,7 @@ export default function Login() {
             <Link to="/marketplace">
               NFT Marketplace <ion-icon name="arrow-forward-sharp"></ion-icon>
             </Link>
-            <Link to="/avatar">
-              3D Avatar <ion-icon name="arrow-forward-sharp"></ion-icon>
-            </Link>
-            <Link to="/spaces">
-              3D Spaces <ion-icon name="arrow-forward-sharp"></ion-icon>
-            </Link>
+            
           </div>
         </div>
         <ConnectDialog />
