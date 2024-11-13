@@ -16,28 +16,9 @@ export default function Login() {
   };
   return (
     <div className="get-started-container">
-      {showModal && (
-        <div className="modal-overlay">
-          <div className="modall">
-            <div className="modal-header">
-              <h2></h2>
-              <h2>Thank You!</h2>
-              <button className="closee-btn" onClick={handleCloseModal}>
-                &times;
-              </button>
-            </div>
-            <div className="modal-body">
-              <p>
-                Thank you for joining the waitlist! We appreciate your interest
-                in  The Zori.
-              </p>
-            </div>
-          </div>
-        </div>
-      )}
       <div className="get-started-content">
-        <h1>Get Started with The Zori</h1>
-        <h4>Welcome to  The Zori.</h4>
+        <h1>Get Started</h1>
+        <h4>Welcome</h4>
         <h4>Explore virtual worlds, express yourself with custom avatars, and collect digital creations that are truly yours</h4>
         <h4>Login via Web3 wallet.</h4>
 
