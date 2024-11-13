@@ -1,0 +1,25 @@
+.profile-page-wrapper h1 {
+  font-family: Hanson;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3.8em;
+  padding: 20px;
+  margin-top: 100px;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, #ffffff 0%, #8a36ff 25%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.profile-page-wrapper h3 {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 2em;
+  margin-top: 10px;
+  margin-left: 20px;
+  /* -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, #ffffff 00%, #8a36ff 70%);
+  background-clip: text;
+  -webkit-background-clip: text; */
+  color: #f4f4f4;
+}

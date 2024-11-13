@@ -1,0 +1,209 @@
+@font-face {
+  font-family: power;
+  src: url(../../../public/fonts/PowerGroteskTRIAL-Medium.otf);
+}
+
+.mint-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 150px;
+  padding: 20px 40px;
+  border-radius: 20px;
+  background: linear-gradient(
+    -40deg,
+    rgba(255, 41, 248, 0.3) 0%,
+    rgba(16, 16, 16, 0.5) 30%
+  );
+  backdrop-filter: blur(20px);
+  color: #ffbaf9;
+}
+
+.mint-form h1 {
+  font-size: 3.2em;
+  font-family: power;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.mint-form .field-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+}
+
+.mint-form .field-wrapper label {
+  font-size: 1.2em;
+  font-family: Helvetica;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  text-wrap: nowrap;
+}
+
+.mint-form .field-wrapper input {
+  padding: 0.5em 0.75em;
+  border-radius: 6px;
+  background: linear-gradient(
+    -60deg,
+    rgba(255, 41, 248, 0.2) 0%,
+    rgba(16, 16, 16, 0.6) 20%
+  );
+  font-size: 1.1em;
+  font-family: Helvetica;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  width: 100%;
+}
+
+.field-wrapper input:focus {
+  outline: none;
+  background: linear-gradient(
+    -60deg,
+    rgba(255, 41, 248, 0.2) 0%,
+    rgba(16, 16, 16, 0.6) 30%
+  );
+}
+
+.mint-form .field-wrapper textarea {
+  padding: 0.5em 0.75em;
+  border-radius: 6px;
+  background: linear-gradient(
+    -60deg,
+    rgba(255, 41, 248, 0.2) 0%,
+    rgba(16, 16, 16, 0.6) 20%
+  );
+  font-size: 1.1em;
+  font-family: Helvetica;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+.mint-form .field-wrapper textarea:focus {
+  outline: none;
+  background: linear-gradient(
+    -60deg,
+    rgba(255, 41, 248, 0.2) 0%,
+    rgba(16, 16, 16, 0.6) 30%
+  );
+}
+
+.mint-button ion-icon {
+  position: relative;
+  top: -2px;
+  left: 4px;
+  color: #ceabff;
+}
+
+.confirmation-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  /* padding: 20px; */
+  z-index: 2;
+  height: 150%;
+  width: 100vw;
+  font-family: monospace;
+  font-weight: bold;
+}
+.confirmation-modal h2 {
+  font-size: 1.5em;
+}
+
+.confirmation-modal table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.confirmation-modal th {
+  font-size: 1.25em;
+  text-align: left;
+  padding: 0.2em 0.75em;
+}
+
+.confirmation-modal-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  border-radius: 20px;
+  background: linear-gradient(
+    -40deg,
+    rgba(255, 41, 248, 0.6) 0%,
+    rgb(255, 255, 255) 40%
+  );
+  backdrop-filter: blur(20px);
+  color: #370933;
+}
+
+.confirmation-modal-wrapper img {
+  border-radius: 10px;
+}
+
+.confirmation-buttons {
+  display: flex;
+  gap: 40px;
+  font-family: aesthetic;
+  font-size: 1.25em;
+}
+
+.confirmation-buttons button {
+  border-bottom: 2px solid rgba(55, 9, 51, 0);
+  transition: all 0.5s ease;
+}
+
+.confirmation-buttons button:hover {
+  border-bottom: 2px solid rgba(55, 9, 51, 1);
+}
+
+@media (max-width: 767px) {
+  .mint-form {
+    margin-top: 140px;
+    max-width: 90vw;
+  }
+  .mint-form h1 {
+    font-size: 2.8em;
+  }
+  .mint-form .field-wrapper label {
+    font-size: 1em;
+  }
+  .mint-form .field-wrapper input,
+  .mint-form .field-wrapper textarea {
+    font-size: 0.85em;
+  }
+  .confirmation-modal {
+    top: 30%;
+  }
+  .confirmation-modal h2 {
+    font-size: 1.2em;
+  }
+  .confirmation-modal th {
+    font-size: 1.2em;
+  }
+  .confirmation-modal-wrapper {
+    width: 90vw;
+    background: linear-gradient(
+      330deg,
+      rgb(206, 171, 255) 0%,
+      rgb(255, 255, 255) 40%
+    );
+  }
+}

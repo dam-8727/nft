@@ -1,0 +1,188 @@
+.category-nft-page {
+  padding: 120px 40px 0px 40px;
+  background: url(../../assets/purple.webp) no-repeat right bottom fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.category-nft-page h2 {
+  font-family: inter;
+  font-weight: 600;
+  font-size: 2.5em;
+  color: white;
+}
+
+.van-nft-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.van-nft-card {
+  width: 250px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 6px;
+  background: rgb(21.34, 18.05, 45.9);
+  border: 2.5px solid rgb(55, 67, 103);
+  border-radius: 20px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.van-nft-card:hover {
+  transform: scale(1.05);
+  border: 2.5px solid rgb(135, 156, 219);
+}
+
+.van-nft-image-wrapper {
+  /* width: 250px; */
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  /* padding: 10px; */
+}
+
+.van-nft-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.van-text-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 6px;
+  padding-left: 4px;
+}
+
+.van-text-overlay h3,
+.van-text-overlay p {
+  color: rgb(173, 194, 255);
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+.van-text-overlay p {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.search-and-sort {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.search-input {
+  background-color: transparent;
+  border: 2px solid #e7d6ff;
+  border-radius: 8px;
+  padding: 8px 12px;
+  color: #ffffff;
+  font-size: 1em;
+  position: relative;
+  width: 500px;
+}
+
+.search-input:focus {
+  outline: 1px solid #c7a0ff;
+}
+
+.search-input::placeholder {
+  color: #ffffff;
+}
+
+.search-and-sort ion-icon {
+  color: #e7d6ff;
+  font-size: 1.6em;
+  position: relative;
+  top: 5px;
+  right: 40px;
+}
+
+.filter-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 1em;
+  margin-right: 10px;
+  /* background-color: rgb(36, 30, 83); */
+  border: 2px solid #e7d6ff;
+  padding: 8px 18px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.filter-text ion-icon {
+  color: #ffffff;
+  font-size: 1.4em;
+  position: relative;
+  top: 0px;
+  left: -2px;
+  margin-left: 5px;
+  padding-right: 10px;
+}
+
+.sort-select {
+  padding: 8px 12px;
+  border: 2px solid #e7d6ff;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 8px;
+  font-size: 1em;
+  padding: 8px 18px;
+  width: 300px;
+}
+
+.sort-select:focus {
+  outline: 1px solid #c7a0ff;
+}
+
+.sort-dropdown option {
+  background-color: white;
+  color: black;
+}
+
+.sort-dropdown option:hover {
+  background-color: #9a51ff;
+}
+
+@media (max-width: 767px) {
+  .category-nft-page {
+    padding: 120px 15px 0px 15px;
+  }
+  .van-nft-card {
+    width: 160px;
+    height: fit-content;
+    padding: 5px;
+  }
+  .van-nft-image-wrapper {
+    height: 100%;
+  }
+  .search-and-sort {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .search-input {
+    width: 250px;
+  }
+  .sort-select {
+    width: 250px;
+  }
+}
