@@ -11,6 +11,7 @@ import MintForm from "./Pages/MintForm";
 import { createClient } from "@connect2ic/core";
 import { defaultProviders } from "@connect2ic/core/providers";
 import Collection from "./Pages/Collection";
+import CustomCursor from "./CustomCursor";
 
 import {
   Connect2ICProvider
